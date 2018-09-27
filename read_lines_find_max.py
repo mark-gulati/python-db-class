@@ -1,9 +1,11 @@
 import operator
 
 fname = input("Enter file name: ")
+
 if len(fname) < 1 : fname = "mbox-short.txt"
 
 fh = open(fname)
+
 summary = dict()
 
 for line in fh:
